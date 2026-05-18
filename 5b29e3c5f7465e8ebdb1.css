@@ -1,0 +1,60 @@
+#container {
+    padding: 15px;
+}
+.field-container {
+    margin-bottom: 20px;
+}
+
+/* Ensure readable text in both Word light/dark modes */
+body {
+    color: #323130; /* Microsoft default text */
+    background: transparent;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    color: inherit;
+    background-color: #ffffff;
+    border: 1px solid #c8c8c8;
+}
+
+
+.radio-group label {
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Dark mode override (fallback) */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #ffffff;
+    }
+
+    label {
+        color: inherit;
+    }
+
+    input[type="text"] {
+        color: #ffffff;
+        background-color: #1f1f1f;
+        border: 1px solid #3a3a3a;
+    }
+}
+
